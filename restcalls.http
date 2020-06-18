@@ -1,0 +1,32 @@
+GET http://localhost:3000/test
+###
+# Get list of todos
+GET http://localhost:3000/
+###
+GET http://localhost:3000/darren
+
+# Add new todo
+
+POST http://localhost:3000/
+content-type: application/json
+
+{
+    "personname":"hazel",
+    "task":"wake up",
+    "hasattachment":"0",
+    "isdone":"0"
+}
+
+###
+PATCH http://localhost:3000/
+Content-Type: application/json
+
+{
+    "idtodo":"2",
+    "task":"Play computer",
+    "isdone":"1"
+}
+
+###
+
+DELETE http://localhost:3000/7

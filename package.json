@@ -1,0 +1,19 @@
+{
+  "name": "todo-angular",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/darrenfongzw/todoAngular.git",
+  "author": "Darren Fong <fong.zwd@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "sql": "ssh -f ubuntu@ssh.fongz.xyz -L 33306:127.0.0.1:3306 -N",
+    "start": "nodemon app.js"
+  }
+}
